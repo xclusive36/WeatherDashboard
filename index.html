@@ -37,7 +37,52 @@
             <button class="search-history-button">a</button>
           </div>
         </section>
-        <section id="current-weather">adsf</section>
+        <section id="current-weather">
+          <div id="current-weather-content">
+            <div id="current-weather-header">
+              <h2 id="current-weather-city">San Diego</h2>
+              <h2 id="current-weather-date">(Date)</h2>
+              <img
+                id="current-weather-icon"
+                src="https://openweathermap.org/img/w/10d.png"
+                alt="weather icon"
+              />
+            </div>
+            <div id="current-weather-data">
+              <p id="current-weather-temp">
+                Temp: <span class="card-temp-data"></span>
+              </p>
+              <p id="current-weather-humidity">
+                Wind: <span class="card-wind-data"></span>
+              </p>
+              <p id="current-weather-wind">
+                Humidity: <span class="card-humidity-data"></span>
+              </p>
+            </div>
+          </div>
+          <div id="forecast">
+            <h3>5-Day Forecast:</h3>
+            <div id="forecast-cards">
+              <div class="forecast-card">
+                <h4>Date</h4>
+                <img
+                  id="forecast-weather-icon"
+                  src="https://openweathermap.org/img/w/10d.png"
+                  alt="weather icon"
+                />
+                <p id="current-weather-temp">
+                  Temp: <span id="temp-data"></span>
+                </p>
+                <p id="current-weather-humidity">
+                  Wind: <span id="wind-data"></span>
+                </p>
+                <p id="current-weather-wind">
+                  Humidity: <span id="humidity-data"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <script type="text/javascript" src="./assets/script.js"></script>

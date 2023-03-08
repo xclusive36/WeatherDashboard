@@ -26,15 +26,16 @@
       <div id="content">
         <section id="search">
           <form id="search-form">
-            <h2>Search for a City:</h2>
+            <h2>City Search:</h2>
             <input type="text" id="search-input" placeholder="San Diego" />
             <button type="submit" id="search-button">Search</button>
           </form>
           <div id="search-history">
-            <button class="search-history-button">a</button>
-            <button class="search-history-button">a</button>
-            <button class="search-history-button">a</button>
-            <button class="search-history-button">a</button>
+            <h2>Search History:</h2>
+            <button onclick="clearSearchHistory()" class="btn btn-secondary">
+              Clear History
+            </button>
+            <div id="search-history-list"></div>
           </div>
         </section>
         <section id="current-weather">
@@ -42,8 +43,11 @@
             <div id="current-weather-header">
               <h2 id="current-weather-city"></h2>
               <h2 id="current-weather-date"></h2>
-              <img id="current-weather-icon" class="hide"
-              src="https://openweathermap.org/img/w/10d.png" alt="weather icon"
+              <img
+                id="current-weather-icon"
+                class="hide"
+                src="https://openweathermap.org/img/w/10d.png"
+                alt="weather icon"
               />
             </div>
             <div id="current-weather-data">

@@ -133,3 +133,11 @@ header h1 {
 #forecast-cards .forecast-card #forecast-weather-icon {
   padding: 0.5rem;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

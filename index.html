@@ -40,23 +40,21 @@
         <section id="current-weather">
           <div id="current-weather-content">
             <div id="current-weather-header">
-              <h2 id="current-weather-city">San Diego</h2>
-              <h2 id="current-weather-date">(Date)</h2>
-              <img
-                id="current-weather-icon"
-                src="https://openweathermap.org/img/w/10d.png"
-                alt="weather icon"
+              <h2 id="current-weather-city"></h2>
+              <h2 id="current-weather-date"></h2>
+              <img id="current-weather-icon" class="hide"
+              src="https://openweathermap.org/img/w/10d.png" alt="weather icon"
               />
             </div>
             <div id="current-weather-data">
               <p id="current-weather-temp">
-                Temp: <span class="card-temp-data"></span>
+                Temp: <span id="card-temp-data"></span>
               </p>
               <p id="current-weather-humidity">
-                Wind: <span class="card-wind-data"></span>
+                Wind: <span id="card-wind-data"></span>
               </p>
               <p id="current-weather-wind">
-                Humidity: <span class="card-humidity-data"></span>
+                Humidity: <span id="card-humidity-data"></span>
               </p>
             </div>
           </div>
@@ -85,6 +83,17 @@
         </section>
       </div>
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./assets/script.js"></script>
   </body>
 </html>

@@ -10,6 +10,6 @@ The default city data displayed is Denver. This will display on the web apps fir
 
 The web application utilizes JQuery and DayJS.
 
-![Screenshot](./screen.png)
+![Screenshot](./assets/screen.png)
 
 [Link to working example](https://xclusive36.github.io/WeatherDashboard/)

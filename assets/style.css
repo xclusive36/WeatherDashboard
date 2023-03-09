@@ -30,23 +30,23 @@ header h1 {
   align-items: flex-start;
 }
 
-#content #search {
+#search {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
-#content #search #search-form {
+#search-form {
   display: flex;
   flex-direction: column;
 }
 
-#content #search #search-form #search-input {
+#search-input {
   margin-bottom: 1rem;
   padding: 0.5rem;
 }
 
-#content #search #search-form #search-button {
+#search-button {
   padding: 0.5rem;
   margin-bottom: 1rem;
   background-color: var(--secondary-color);
@@ -55,7 +55,7 @@ header h1 {
   border-radius: 0.25rem;
 }
 
-#content #search #search-history {
+#search-history {
   border-top: solid var(--tertiary-color) 1px;
   text-align: center;
 }
@@ -74,53 +74,44 @@ header h1 {
   color: var(--white);
 }
 
-#content #current-weather {
+#current-weather {
   flex: 1;
   margin: 1rem;
 }
 
-#content #current-weather #current-weather-content {
+#current-weather-content {
   border: 1px var(--tertiary-color) solid;
   display: flex;
   flex-direction: column;
 }
 
-#content #current-weather #current-weather-content #current-weather-header {
+#current-weather-header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 0 0.5rem;
 }
 
-#content
-  #current-weather
-  #current-weather-content
-  #current-weather-header
-  #current-weather-icon {
+#current-weather-icon {
   align-self: center;
 }
 
-#content
-  #current-weather
-  #current-weather-content
-  #current-weather-header
-  #current-weather-date {
+#current-weather-date {
   padding: 0 0.5rem;
 }
 
-#content #current-weather #current-weather-content #current-weather-data {
+#current-weather-data {
   padding: 0 0.5rem;
 }
 
 #forecast-cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-#forecast-cards .forecast-card {
-  flex: 1;
+.forecast-card {
+  flex: 1 1 160px;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -128,17 +119,18 @@ header h1 {
   background-color: var(--dark);
   color: var(--white);
   padding: 0.5rem;
+  /* min-width: 120px; */
 }
 
-#forecast-cards .forecast-card:first-child {
+.forecast-card:first-child {
   margin-left: 0;
 }
 
-#forecast-cards .forecast-card:last-child {
+.forecast-card:last-child {
   margin-right: 0;
 }
 
-#forecast-cards .forecast-card h4 {
+.forecast-card h4 {
   margin: 0;
 }
 

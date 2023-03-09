@@ -6,24 +6,14 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <h1>Weather Dashboard</h1>
     </header>
-    <!-- AS A traveler I WANT to see the weather outlook for multiple cities SO THAT
-    I can plan a trip accordingly -->
-    <!-- GIVEN a weather dashboard with form inputs WHEN I search for a city THEN I
-    am presented with current and future conditions for that city and that city
-    is added to the search history WHEN I view current weather conditions for
-    that city THEN I am presented with the city name, the date, an icon
-    representation of weather conditions, the temperature, the humidity, and the
-    the wind speed WHEN I view future weather conditions for that city THEN I am
-    presented with a 5-day forecast that displays the date, an icon
-    representation of weather conditions, the temperature, the wind speed, and
-    the humidity WHEN I click on a city in the search history THEN I am again
-    presented with current and future conditions for that city -->
-
+    <!-- Main -->
     <main>
       <div id="content">
+        <!-- Search -->
         <section id="search">
           <form id="search-form">
             <h2>City Search:</h2>
@@ -38,6 +28,7 @@
             <div id="search-history-list"></div>
           </div>
         </section>
+        <!-- Current Weather -->
         <section id="current-weather">
           <div id="current-weather-content">
             <div id="current-weather-header">
@@ -64,25 +55,7 @@
           </div>
           <div id="forecast">
             <h3>5-Day Forecast:</h3>
-            <div id="forecast-cards">
-              <div class="forecast-card">
-                <h4>Date</h4>
-                <img
-                  id="forecast-weather-icon"
-                  src="https://openweathermap.org/img/w/10d.png"
-                  alt="weather icon"
-                />
-                <p id="current-weather-temp">
-                  Temp: <span id="temp-data"></span>
-                </p>
-                <p id="current-weather-humidity">
-                  Wind: <span id="wind-data"></span>
-                </p>
-                <p id="current-weather-wind">
-                  Humidity: <span id="humidity-data"></span>
-                </p>
-              </div>
-            </div>
+            <div id="forecast-cards"></div>
           </div>
         </section>
       </div>
